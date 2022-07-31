@@ -1,9 +1,13 @@
-@mixin cardSet($cardSet__gap: 30px) {
-    display: flex;
-    flex-wrap: wrap;
-    gap: $cardSet__gap;
+@mixin section($indent: 94px) {
+    padding-top: $indent;
+    padding-bottom: $indent;
 }
 
-@mixin cardSet__item ($cardSet__gap: 30px, $items: 3) {
-    flex-basis: calc((100% - #{$cardSet__gap} * (#{$items} - 1)) / #{$items});
+@mixin container ($wd: 1200px, $ml: auto, $mr: auto, $pl: 15px, $pr: 15px) {
+    width: $wd;
+    margin-left: $ml;
+    margin-right: $mr;
+    padding-left: $pl;
+    padding-right: $pr;
+
 }
